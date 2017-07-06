@@ -10,6 +10,10 @@
  * without written permission from the TheForsakenSurvivors community.
  */
 
+//Settings for TFAR extenstion
+tf_radio_channel_name = getText (missionConfigFile >> "ForceTFAR" >> "tf_radio_channel_name");
+tf_radio_channel_password = getText (missionConfigFile >> "ForceTFAR" >> "tf_radio_channel_password");
+
 //Execute the following only on clients.
 if (hasInterface) then
 {

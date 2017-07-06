@@ -21,7 +21,7 @@ if !(isClass (configFile >> "CfgPatches" >> "task_force_radio")) exitWith
 		//Kick player after disaplying TFAR Not found warning.
 		private _message = "TaskForceRadio was not launched with ArmA 3!\nPlease restart you game with TaskForceRadio enabled!";
 		
-		private _timer = 10;
+		private _timer = ftfar_wait_for_action_time;
 		while {_timer > 0} do
 		{
 			cutText [format["%1\n%2", _message, format["You will be returned to the lobby in %1 second/s.", _timer]], "BLACK FADED", 999];
@@ -33,10 +33,6 @@ if !(isClass (configFile >> "CfgPatches" >> "task_force_radio")) exitWith
 		true
 	};
 };
-
-//Settings for TFAR extenstion
-tf_radio_channel_name = if (isNil "tf_radio_channel_name") then { getText (missionConfigFile >> "ForceTFAR" >> "tf_radio_channel_name"); } else { tf_radio_channel_name };
-tf_radio_channel_password = if (isNil "tf_radio_channel_password") then { getText (missionConfigFile >> "ForceTFAR" >> "tf_radio_channel_password"); } else { tf_radio_channel_password };
 
 //Custom TFAR Settings
 ftfar_server_name = getText (missionConfigFile >> "ForceTFAR" >> "ftfar_server_name");

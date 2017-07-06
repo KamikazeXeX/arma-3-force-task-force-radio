@@ -11,11 +11,11 @@ class ForceTFAR
 {
 	//Settings for TFAR
 	tf_radio_channel_name = "TaskForceRadio"; //TFAR channel name.
-	tf_radio_channel_password = "TFARChannelPassword"; //TFAR channel password.
+	tf_radio_channel_password = "123"; //TFAR channel password.
 
 	//Force TFAR Settings.
 	ftfar_server_name = "TeamSpeakServer"; //Server name.
 	ftfar_server_ipaddress = "TeamSpeakServerIP"; //Server ip address.
-	ftfar_server_password = "TeamSpeakServerPassword"; //Server password.
+	ftfar_server_password = ""; //Server password.
 	ftfar_wait_for_action_time = 30; //Time in seconds.
 };
