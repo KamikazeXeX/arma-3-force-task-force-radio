@@ -17,6 +17,8 @@ tf_radio_channel_password = getText (missionConfigFile >> "ForceTFAR" >> "tf_rad
 //Execute the following only on clients.
 if (hasInterface) then
 {
-	//Start
-	[] spawn compile preprocessFileLineNumbers "TFS_fnc_ftfar_init.sqf";
+	if ((getNumber (missionConfigFile >> "ForceTFAR" >> "ftfar_is_enabled")) isEqualTo 1) then
+	{
+		[] spawn compile preprocessFileLineNumbers "TFS_fnc_ftfar_init.sqf";
+	};
 };

@@ -3,11 +3,14 @@
  * www.theforsakensurvivors.co.uk
  * © 2017 TheForsakenSurvivors Community
  *
+ * Author: KamikazeXeX
+ *	https://github.com/KamikazeXeX
+ *
  * This work is property of TheForsakenSurvivors. You do not have permissions to use/edit/distribute any of this content
  * without written permission from the TheForsakenSurvivors community.
  */
 
-// Wait for main display to exist
+//Wait for main display to exist.
 waitUntil { !isNull player };
 waitUntil { uiSleep 2; (!isNull (findDisplay 46)) };
 
@@ -16,9 +19,9 @@ if !(isClass (configFile >> "CfgPatches" >> "task_force_radio")) exitWith
 {
 	[] spawn
 	{
-		disableUserInput true;
-		disableUserInput true;
 		//Kick player after disaplying TFAR Not found warning.
+		disableUserInput true;
+		disableUserInput true;
 		private _message = "TaskForceRadio was not launched with ArmA 3!\nPlease restart you game with TaskForceRadio enabled!";
 		
 		private _timer = ftfar_wait_for_action_time;
@@ -34,7 +37,7 @@ if !(isClass (configFile >> "CfgPatches" >> "task_force_radio")) exitWith
 	};
 };
 
-//Custom TFAR Settings
+//Custom TFAR Settings.
 ftfar_server_name = getText (missionConfigFile >> "ForceTFAR" >> "ftfar_server_name");
 ftfar_server_ipaddress = getText (missionConfigFile >> "ForceTFAR" >> "ftfar_server_ipaddress");
 ftfar_server_password = getText (missionConfigFile >> "ForceTFAR" >> "ftfar_server_password");
