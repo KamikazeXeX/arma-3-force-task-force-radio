@@ -12,7 +12,7 @@ This script will validate that players are using Task Force Radio and if they ha
 It will display a appropriate warning and then kick them from the server.
 
 ## Installation
-Simply copy the FTFAR_fnc_init.sqf to the root of your mission file and append the contents of init.sqf and description.ext to your existing files respectively.
+Simply copy the TFS_fnc_ftfar_init.sqf to the root of your mission file and append the contents of init.sqf and description.ext to your existing files respectively.
 Once you have done the above, configure your settings inside class ForceTFAR in the description.ext
 
 tf_radio_channel_name - The name of the TeamSpeak channel users need to be in (this is a default TFAR setting and will be ignored if already configured).
