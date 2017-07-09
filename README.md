@@ -9,7 +9,7 @@ This script will validate that players are using Task Force Radio and if they ha
 2. Joined the correct TeamSpeak server.
 3. Joined the correct TeamSpeak channel.
 
-It will display a appropriate warning and then kick them from the server.
+It will display a appropriate warning and then kick them from the server if they do not complete what is asked within the time you configure (default 30 seconds).
 
 ## Installation
 Simply copy the TFS_fnc_ftfar_init.sqf to the root of your mission file and append the contents of init.sqf and description.ext to your existing files respectively.
